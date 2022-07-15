@@ -1,0 +1,336 @@
+MAGUS was run with: /projects/tallis/baqiaol2/WITCH-og/tools/magus/magus.py --recurse false -np 24 -i /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta -d /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment -o /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta
+Aligning sequences /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta
+Read 500 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta ..
+Building PASTA-style FastTree initial tree on /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta with skeleton size 300..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/skeleton_sequences.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/temp_initial_align.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/hmmer/hmmbuild --ere 0.59 --cpu 1 --symfrac 0.0 --informat afa /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/skeleton_hmm/temp_hmm_model.txt /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Read 200 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/queries.txt ..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/hmmer/hmmalign -o /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/chunks_queries/temp_queries_chunk_1_aligned.txt /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/skeleton_hmm/hmm_model.txt /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/chunks_queries/queries_chunk_1.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Read 500 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt ..
+Found 100% ACGT-N, assuming DNA..
+Data type wasn't specified. Inferred data type DNA from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_tree.tre
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/fasttree/FastTreeMP -nt -gtr -fastest -nosupport /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_align.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/temp_initial_tree.tre
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/initial_tree/initial_tree.tre
+Built initial tree on /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta in 201.73634266853333 sec..
+Using target subset size of 50, and maximum number of subsets 25..
+Read 500 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta ..
+Decomposing a tree with 500 leaves into 275 and 225..
+Decomposing a tree with 275 leaves into 153 and 122..
+Decomposing a tree with 225 leaves into 130 and 95..
+Decomposing a tree with 153 leaves into 75 and 78..
+Decomposing a tree with 130 leaves into 75 and 55..
+Decomposing a tree with 122 leaves into 71 and 51..
+Decomposing a tree with 95 leaves into 46 and 49..
+Decomposing a tree with 78 leaves into 46 and 32..
+Decomposing a tree with 75 leaves into 45 and 30..
+Decomposing a tree with 75 leaves into 37 and 38..
+Decomposing a tree with 71 leaves into 43 and 28..
+Decomposing a tree with 55 leaves into 27 and 28..
+Decomposing a tree with 51 leaves into 26 and 25..
+Decomposed /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.unaln.fasta into 14 subsets in 201.84972977638245 sec..
+Heads up! All backbone alignments are treated equally..
+Building 14 subalignments..
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_1.txt ..
+Subset has 46/200 sequences, aligning with MAFFT..
+Read 49 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_2.txt ..
+Subset has 49/200 sequences, aligning with MAFFT..
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_3.txt ..
+Subset has 46/200 sequences, aligning with MAFFT..
+Read 32 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_4.txt ..
+Subset has 32/200 sequences, aligning with MAFFT..
+Read 45 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_5.txt ..
+Subset has 45/200 sequences, aligning with MAFFT..
+Read 30 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_6.txt ..
+Subset has 30/200 sequences, aligning with MAFFT..
+Read 37 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_7.txt ..
+Subset has 37/200 sequences, aligning with MAFFT..
+Read 38 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_8.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 43 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_9.txt ..
+Subset has 43/200 sequences, aligning with MAFFT..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_10.txt ..
+Subset has 28/200 sequences, aligning with MAFFT..
+Read 27 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_11.txt ..
+Subset has 27/200 sequences, aligning with MAFFT..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_12.txt ..
+Subset has 28/200 sequences, aligning with MAFFT..
+Read 26 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_13.txt ..
+Subset has 26/200 sequences, aligning with MAFFT..
+Read 25 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_14.txt ..
+Subset has 25/200 sequences, aligning with MAFFT..
+Prepared 14 subset alignment tasks..
+Merging 14 subaligments..
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_1.txt ..
+Read 49 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_2.txt ..
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_3.txt ..
+Read 32 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_4.txt ..
+Read 45 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_5.txt ..
+Read 30 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_6.txt ..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_4.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_4.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_4.txt
+Read 37 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_7.txt ..
+Read 38 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_8.txt ..
+Read 43 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_9.txt ..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_10.txt ..
+Read 27 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_11.txt ..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_12.txt ..
+Read 26 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_13.txt ..
+Read 25 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_14.txt ..
+Using 10 MAFFT backbones..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_10_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_9_mafft.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_4.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_2_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_4_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_5_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_3_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_10.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_10.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_10.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_6_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_7_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_8_mafft.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_10.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_5.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_5.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_5.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_7.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_7.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_7.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_13.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_13.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_13.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_8.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_8.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_8.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_unalign.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_backbone_1_mafft.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_6.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_6.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_6.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_9.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_9.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_9.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_13.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_12.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_12.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_12.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_11.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_11.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_11.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_14.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_14.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_14.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_2.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_2.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_2.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_1.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_1.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_1.txt
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_3.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 24 --anysymbol /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/decomposition/subset_3.txt > /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/temp_subalignment_subset_3.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_12.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_14.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_8.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_6.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_11.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_7.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_3.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_5.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_2.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_9.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_1.txt
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_1.txt ..
+Read 49 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_2.txt ..
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_3.txt ..
+Read 32 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_4.txt ..
+Read 45 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_5.txt ..
+Read 30 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_6.txt ..
+Read 37 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_7.txt ..
+Read 38 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_8.txt ..
+Read 43 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_9.txt ..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_10.txt ..
+Read 27 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_11.txt ..
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_12.txt ..
+Read 26 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_13.txt ..
+Read 25 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_4_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_5_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_3_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_10_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_7_mafft.txt to the graph - weight = 1.
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_8_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_2_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_1_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_6_mafft.txt to the graph - weight = 1.
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt
+Feeding backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt to the graph..
+Read 196 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt ..
+Constructed backbone alignment map from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt
+Fed backbone /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/backbone_9_mafft.txt to the graph - weight = 1.
+Wrote matrix to /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/graph.txt
+Built the alignment graph in 393.48959136009216 sec..
+Running MCL alignment graph clustering..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/clusters.txt
+Running an external tool, command: /projects/tallis/baqiaol2/WITCH-og/tools/magus/tools/mcl/bin/mcl /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/graph.txt --abc -o /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/temp_clusters.txt -I 4
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/clusters.txt
+Found 1015 clusters..
+Clustered the graph in 11.908295392990112 sec..
+Purged duplicate clusters. Found 1015 unique clusters..
+Found 0 row violations and 1648 column violations..
+Finished violations sweep. Now 0 row violations and 0 column violations..
+Purged cluster violations. Found 1015 clean clusters..
+Finding graph trace with minimum clusters heuristic search..
+Reached new search frontier
+{0: 174, 1: 174, 2: 174, 3: 174, 4: 173, 5: 174, 6: 174, 7: 174, 8: 174, 9: 174, 10: 174, 11: 174, 12: 174, 13: 174}
+Safe frontier reached.. dumping 0 from heap and resetting aggression..
+Reached new search frontier
+{0: 180, 1: 180, 2: 181, 3: 181, 4: 180, 5: 181, 6: 181, 7: 181, 8: 181, 9: 181, 10: 180, 11: 181, 12: 181, 13: 181}
+Reached new search frontier
+{0: 186, 1: 185, 2: 186, 3: 186, 4: 185, 5: 186, 6: 186, 7: 186, 8: 186, 9: 186, 10: 185, 11: 186, 12: 186, 13: 186}
+Safe frontier reached.. dumping 3 from heap and resetting aggression..
+Reached new search frontier
+{0: 187, 1: 190, 2: 187, 3: 187, 4: 186, 5: 187, 6: 187, 7: 188, 8: 187, 9: 187, 10: 187, 11: 189, 12: 187, 13: 187}
+Reached new search frontier
+{0: 209, 1: 211, 2: 211, 3: 211, 4: 210, 5: 212, 6: 211, 7: 209, 8: 211, 9: 211, 10: 209, 11: 212, 12: 211, 13: 211}
+Safe frontier reached.. dumping 137 from heap and resetting aggression..
+Reached new search frontier
+{0: 212, 1: 214, 2: 215, 3: 215, 4: 214, 5: 216, 6: 215, 7: 214, 8: 215, 9: 215, 10: 210, 11: 214, 12: 215, 13: 215}
+Reached new search frontier
+{0: 213, 1: 217, 2: 220, 3: 220, 4: 219, 5: 221, 6: 220, 7: 217, 8: 220, 9: 220, 10: 214, 11: 218, 12: 220, 13: 220}
+Reached new search frontier
+{0: 292, 1: 294, 2: 297, 3: 297, 4: 296, 5: 298, 6: 297, 7: 294, 8: 297, 9: 297, 10: 292, 11: 295, 12: 297, 13: 296}
+Safe frontier reached.. dumping 57 from heap and resetting aggression..
+Reached new search frontier
+{0: 307, 1: 310, 2: 313, 3: 313, 4: 312, 5: 313, 6: 313, 7: 310, 8: 312, 9: 313, 10: 308, 11: 311, 12: 310, 13: 310}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 494, 1: 496, 2: 499, 3: 491, 4: 499, 5: 500, 6: 498, 7: 496, 8: 499, 9: 496, 10: 493, 11: 496, 12: 496, 13: 497}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 497, 1: 499, 2: 502, 3: 494, 4: 502, 5: 503, 6: 501, 7: 499, 8: 504, 9: 499, 10: 496, 11: 499, 12: 499, 13: 500}
+Reached new search frontier
+{0: 701, 1: 703, 2: 706, 3: 698, 4: 706, 5: 707, 6: 705, 7: 703, 8: 708, 9: 703, 10: 700, 11: 703, 12: 705, 13: 705}
+Safe frontier reached.. dumping 5 from heap and resetting aggression..
+Found alignment graph trace in 0.3775761127471924 sec..
+Found a trace with 1033 clusters and a total cost of 51241758
+Skipping optimization pass..
+Finished optimization in 7.534027099609375e-05 sec..
+Uncompressed alignment will have 1452000 cells..
+Assembling final alignment in /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_14.txt
+Read 25 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_14.txt
+Read 25 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_14.txt ..
+Appending induced alignment, 25 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_2.txt
+Read 49 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_2.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_2.txt
+Read 49 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_2.txt ..
+Appending induced alignment, 49 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_8.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_8.txt ..
+Appending induced alignment, 38 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_5.txt
+Read 45 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_5.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_5.txt
+Read 45 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_5.txt ..
+Appending induced alignment, 45 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_1.txt
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_1.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_1.txt
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_1.txt ..
+Appending induced alignment, 46 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_12.txt
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_12.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_12.txt
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_12.txt ..
+Appending induced alignment, 28 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_3.txt
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_3.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_3.txt
+Read 46 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_3.txt ..
+Appending induced alignment, 46 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_9.txt
+Read 43 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_9.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_9.txt
+Read 43 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_9.txt ..
+Appending induced alignment, 43 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_13.txt
+Read 26 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_13.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_13.txt
+Read 26 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_13.txt ..
+Appending induced alignment, 26 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_4.txt
+Read 32 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_4.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_4.txt
+Read 32 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_4.txt ..
+Appending induced alignment, 32 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_7.txt
+Read 37 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_7.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_7.txt
+Read 37 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_7.txt ..
+Appending induced alignment, 37 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_11.txt
+Read 27 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_11.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_11.txt
+Read 27 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_11.txt ..
+Appending induced alignment, 27 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_6.txt
+Read 30 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_6.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_6.txt
+Read 30 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_6.txt ..
+Appending induced alignment, 30 sequences of length 2904..
+Running a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_10.txt
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/subalignments/subalignment_subset_10.txt ..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_10.txt
+Read 28 sequences from /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/magus_alignment/graph/induced_subalignment_subset_10.txt ..
+Appending induced alignment, 28 sequences of length 2904..
+Wrote final alignment to /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta
+Merged 14 subalignments into /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta in 407.4082233905792 sec..
+Completed a task, output file: /scratch/users/baqiaol2/seq-len-hetero/UnalignFragTree/high_frag/1000M1/R0/unaligned_all_extract/tree_decomp/backbone/backbone.aln.fasta
+Waiting for 0 tasks to finish..
+MAGUS finished in 609.2872483730316 seconds..
