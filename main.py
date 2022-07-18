@@ -56,7 +56,7 @@ class AdjustedBitscoreTracker:
     hmm_sizes : List[int] = field(default_factory=list)
     bitscores : List[float] = field(default_factory=list)
 
-    # 98% from Chengze's calculation
+    # almost all from Chengze's calculation
     def calc_adjusted_scores(self, limit = 7) -> List[Tuple[int, float]]:
         bitscores = np.array(self.bitscores)
         sizes = np.array(self.hmm_sizes)
